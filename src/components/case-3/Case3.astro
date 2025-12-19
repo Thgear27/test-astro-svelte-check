@@ -1,0 +1,14 @@
+---
+import Card from "./Card3.svelte";
+---
+
+<div>
+  <!-- Should success: children is not required -->
+  <Card />
+
+  <!-- Should fail: children is provided but not defined in Card3.svelte -->
+  <Card> This is a card content. </Card>
+  <Card>This is a card content.</Card>
+  <Card><p>This is a paragraph inside the card.</p></Card>
+  <Card> <p>This is a paragraph inside the card.</p> </Card>
+</div>
